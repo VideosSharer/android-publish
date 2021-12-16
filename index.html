@@ -1,16 +1,393 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>关于我们</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 </head>
-<body class="html">
-<h3>无广告、无须注册可观影、多片库</h2>
-<h4>四大全球片库，1080P畅爽观影体验</h3>
-<h4>会员支持导入视频解析源</h3>
-<h4>确保您的有剧可刷，有片一直看</h3>
-<h4>只有您想不到，没有您看不到</h3>
-<h5>我们是一家由海外华人创立、面向海内外华人服务的视频平台，兼具多种多样的内容形态。</h3>
-<h5>为全球超6000万海内外华人用户提供全面网络服务，致力于打造涵盖多种视频类型的海外华人视频分享平台。</h3>
-<h5>在这里您可以看到来自全球各地华人制作，分享的各类影视资讯，新闻热点等。同时，坚持为广大VIP会员提供专属的精品内容，极致的视听体验和独有的VIP特权。</h3>
+
+<body>
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		img,
+		button {
+			display: block;
+		}
+
+		html,
+		body {
+			width: 100%;
+			height: 100%;
+			/*overflow: hidden;*/
+		}
+
+		#show {
+			width: 100%;
+			height: 100%;
+		}
+
+		#shade {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-image: url("open.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		#hide {
+			width: 100%;
+			height: 100%;
+		}
+
+		.mrigin-auto {
+			margin: 20% auto 0;
+		}
+
+		#btn,
+		#btn_weixin {
+			width: 30%;
+			height: 40px;
+			font-weight: bold;
+			outline: none;
+		}
+
+		.text-center {
+			text-align: center;
+			margin: 10% 0;
+		}
+
+		.intro {
+			display: block;
+			width: 50%;
+			margin: 10px auto !important;
+		}
+
+		#intro {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			overflow: scroll;
+			display: none;
+			background: rgba(0, 0, 0, 0.6);
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		/*body {font-family: Verdana, sans-serif; margin:0}*/
+		.mySlides {
+			display: none
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+			max-width: 400px;
+			position: relative;
+			margin: auto;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.prev,
+		.next {
+			background-color: rgba(99, 99, 97, 0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active,
+		.dot:hover {
+			background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fade {
+			from {
+				opacity: .4
+			}
+
+			to {
+				opacity: 1
+			}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+
+			.prev,
+			.next,
+			.text {
+				font-size: 11px
+			}
+		}
+
+
+
+		.qr-parent {
+			display: inline-flex;
+			width: 100%;
+			justify-content: center;
+		}
+
+		.qr-container {
+			display: inline-flex;
+			position: relative;
+			text-align: center;
+			margin: 0 auto;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.qr-center {
+			display: inline-flex;
+			width: 100%;
+			justify-content: center;
+			margin: 20% auto 0;
+		}
+
+		.qr-container button {
+			width: 80%;
+			height: 40px;
+			font-weight: bold;
+			outline: none;
+			margin: 0% auto 0;
+		}
+	</style>
+	<div id="qr-zone" class="qr-parent">
+		<div class="qr-container">
+			全剧得 - 免费影视App<br>
+			<img src="qr-code.png" alt="" width="300px">
+			<div>免费，无广告，1080P，全分类，多来源</div><br>
+			<div>官网下载：http://tvtvd.com</div><br>
+			<button id="anddownbtn">直接下载APK (9M)</button>
+		</div>
+	</div>
+
+	<div id="shade" style="display:none"></div>
+
+	<div id="hide" style="display:none">
+		<div id="intro">
+			<img class="intro" src="1.jpg" alt="">
+			<img class="intro" src="2.jpg" alt="">
+			<img class="intro" src="3.jpg" alt="">
+			<img class="intro" src="4.jpg" alt="">
+			<img class="intro" src="5.jpg" alt="">
+			<img class="intro" src="6.jpg" alt="">
+			<img class="intro" src="7.jpg" alt="">
+		</div>
+		<img class="mrigin-auto" id="img" src="" alt="">
+		<button class="mrigin-auto" id="btn">点击下载</button>
+	</div>
+	<div id="androiddown" style="display:none">
+		<br>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="screen1.png" width="400px">
+				<div class="text">应用截图</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="screen2.png" width="400px">
+				<div class="text">应用截图</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="screen3.png" width="400px">
+				<div class="text">应用截图</div>
+			</div>
+
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="screen4.png" width="400px">
+				<div class="text">应用截图</div>
+			</div>
+
+
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="screen5.png" width="400px">
+				<div class="text">应用截图</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;上页</a>
+			<a class="next" onclick="plusSlides(1)">下页&#10095;</a>
+		</div>
+
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+
+	</div>
+
+
+
 </body>
-</html>
+<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = slides.length
+		}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex - 1].style.display = "block";
+		dots[slideIndex - 1].className += " active";
+	}
+
+	window.onload = function () {
+		var dlv = "https://tvtvd.com/dlv";
+		var href = window.location.href;
+		var ua = window.navigator.userAgent.toLowerCase();
+		var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+		/*u.indexOf('MQQBrowser') !== -1 || u.indexOf('MQQBrowser QQ') !== -1*/
+		if (ua.match(/MicroMessenger/i) == 'micromessenger' || u.match(/QQ\//i) == "QQ/") {
+			document.getElementById("qr-zone").className = "qr-center";
+			document.getElementById("hide").style.display = "none";
+			document.getElementById("androiddown").style.display = "none";
+			document.getElementById("anddownbtn").addEventListener('click', function () {
+				document.getElementById("shade").style.display = "block";
+			});
+
+		} else {
+			document.getElementById("androiddown").style.display = "block";
+			document.getElementById("anddownbtn").addEventListener('click', function () {
+				window.location.href = dlv;
+				document.getElementById("anddownbtn").removeEventListener('click');
+			});
+		}
+
+
+		if (href.indexOf("?") > 0) {
+			var url = new URL(href);
+			var ref = url.searchParams.get("ref") || "";
+			if (ref.length > 3) {
+				document.write('<script src="https://api.tvtvd.com/video/meta/referrer/view?ref=' + ref + '"/>')
+			}
+		}
+	}
+</script>
+<html>
