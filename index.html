@@ -385,7 +385,9 @@
 			var url = new URL(href);
 			var ref = url.searchParams.get("ref") || "";
 			if (ref.length > 3) {
-				document.write('<script src="https://api.tvtvd.com/video/meta/referrer/view?ref=' + ref + '"/>')
+				var script = document.createElement('script');
+				script.src = "https://api.tvtvd.com/video/meta/visitor/view?ref=" + ref;
+				document.body.appendChild(script);
 			}
 		}
 	}
