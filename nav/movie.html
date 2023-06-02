@@ -1,0 +1,1003 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>/* copy from https://github.com/sindresorhus/github-markdown-css/ */
+
+html,body{background-color: #ffffff;}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  color: #333333;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .octicon {
+  display: inline-block;
+  fill: currentColor;
+  vertical-align: text-bottom;
+}
+
+.markdown-body figure{margin:0;padding:0; display:table;}
+.markdown-body figure figcaption{font-size:92%; text-align:center; color:#09844f;}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #0595bf;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: initial;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+.markdown-body strong{
+  color: #333333;
+}
+.markdown-body em{
+  color: #333333;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: initial;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366dd;
+  text-decoration: none;
+}
+.markdown-body mjx-container[jax="SVG"] > svg a{fill:#0366dd;stroke: #0366dd;}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr:after,
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 12px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  line-height: 12px;
+  color: #09844f;
+  vertical-align: middle;
+  background-color: #f8f8f8;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.markdown-body:after,
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body details,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e2e2e2;
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #636363;
+  border-left: .25em solid #bbbbbb;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid #e8e8e8;
+  color: #0595bf;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+  color: #0595bf;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+  color: #0595bf;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+  color: #0595bf;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+  color: #0595bf;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: #0595bf;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid #bababa;
+}
+
+.markdown-body table tr {
+  background-color: #ffffff;
+  border-top: 1px solid #bababa;
+}
+
+.markdown-body table th {
+  background-color: #e8e8e8;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f9f9f9;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: initial;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: #f8f8f8;
+  color: #09844f;
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+   font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+  color: #09844f;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+.markdown-body section.footnotes{
+    margin-top:48px;
+    border-top:solid 1px #e2e2e2;
+    padding-top:0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown-body mark{color: #111;}
+}
+
+/* PrismJS 1.23.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+@media print {
+    code[class*="language-"],
+    pre[class*="language-"] {
+        text-shadow: none;
+    }
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background-color: #f8f8f8;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #008327;
+}
+
+.token.punctuation {
+    color: #2834ce;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: #2834ce;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #d32d26;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #$$codeBlockColor$$;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #bc319c;
+}
+
+.token.function,
+.token.class-name {
+    color: #967d41;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #784830;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #c0c0c0;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+  .line-numbers-rows > span {
+    display: block;
+    counter-increment: linenumber;
+  }
+
+    .line-numbers-rows > span:before {
+      content: counter(linenumber);
+      color: #c0c0c0;
+      display: block;
+      padding-right: 0.8em;
+      text-align: right;
+    }
+
+
+</style> <style>.mweb-charts{background:#fff;}
+body{ box-sizing: border-box;
+    margin: 0 auto;
+    padding: 28px}
+@media print{
+    pre, code, pre code {
+     overflow: visible !important;
+     white-space: pre-wrap !important;       /* css-3 */
+     white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+     white-space: -pre-wrap !important;      /* Opera 4-6 */
+     white-space: -o-pre-wrap !important;    /* Opera 7 */
+     word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+    }
+    html,body{margin:0;padding:4px;}
+}
+
+</style><script>window.MathJax = {     tex: { tags: 'ams', inlineMath: [ ['$','$'], ['\\(','\\)'] ] },     startup: {     pageReady() {       return MathJax.startup.defaultPageReady().then(function () {          window.mweb_mathjax_ready_val = 'yes';          if(window.mweb_mathjax_ready !== undefined){ mweb_mathjax_ready(); }       });     }   }};document.addEventListener('DOMContentLoaded', function(event) {    if (typeof Prism != 'undefined') {         Prism.highlightAll();     }});window.mweb_mathjax_ready_val = '';function theMWebMathJaxRenderIsReady(key){ return window.mweb_mathjax_ready_val; }</script><script>document.addEventListener('DOMContentLoaded', function(event) {window.mweb_mathjax_ready_val = 'yes';})</script></head><body><div id='markdown_content' class='markdown-body'><h1><a id="%E5%8D%8E%E8%AF%AD%E5%9C%A8%E7%BA%BF%E5%BD%B1%E8%A7%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>华语在线影视</h1>
+<p><a href="https://l0l.tv/">l0l影院</a><br />
+<a href="https://dmdy4.cc/">大米星球</a><br />
+<a href="https://www.4kgod.com/">4k电影天堂</a><br />
+<a href="https://www.naifei1.com/">奈飞鸭</a><br />
+<a href="https://www.hdmoli.com">HDmoli</a><br />
+<a href="https://www.freeok.vip/">Freeok</a><br />
+<a href="https://www.sstv.fun/">速搜TV</a><br />
+<a href="https://q6qq.com">影视之家</a><br />
+<a href="https://m.dm718.com/">大米星球2</a><br />
+<a href="https://www.lgyy.vip/">蓝光影院</a><br />
+<a href="https://www.umkan.cc/">UM影院</a><br />
+<a href="Https://www.mayiyahu.com/">麻衣呀呼</a><br />
+<a href="https://www.renren.pro/">人人</a><br />
+<a href="https://ddys.site/">低端影视</a></p>
+<h1><a id="%E5%8A%A8%E6%BC%AB%E7%95%AA%E5%89%A7" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>动漫番剧</h1>
+<p><a href="http://www.acgnya.com/">Acgnya</a><br />
+<a href="https://www.dilidili8.cc/">嘀哩嘀哩</a><br />
+<a href="http://www.ppxdm.com/">PPXDM</a><br />
+<a href="http://www.995dm.com/">久久动漫</a><br />
+<a href="http://feijisu4.com/">飞极速在线</a><br />
+<a href="https://www.opacg.com/">O站</a><br />
+<a href="https://www.dqsj.top/">大千视界</a><br />
+<a href="https://www.wzwt369.com/">路漫漫</a><br />
+<a href="https://www.agemys.vip/">AGE动漫</a><br />
+<a href="https://www.donghuapiandaquan.com/">动画片大全</a></p>
+<h1><a id="%E7%89%B9%E8%89%B2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>特色</h1>
+<p><a href="https://www.iyueyuw.xyz/">爱粤语</a><br />
+<a href="https://www.uuyuuy.com/">uu粤语</a></p>
+<blockquote>
+<p>Movie</p>
+</blockquote>
+<h1><a id="%E7%BB%BC%E5%90%88%E5%BD%B1%E8%A7%86%E5%9C%A8%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>综合影视(在线)</h1>
+<ul>
+<li><a href="https://www.ixigua.com/channel/dianying/">西瓜视频</a></li>
+<li><a href="https://ddrk.me/">低端影视</a></li>
+<li><a href="http://www.zyshow.net/">台湾综艺节目</a></li>
+<li><a href="http://movie.fush8.com">浮生半日</a></li>
+<li><a href="http://javsite.online/">电影先生</a></li>
+<li><a href="https://yanetflix.com/">4K鸭奈飞</a></li>
+<li><a href="http://91kanju.com/">91看剧</a></li>
+<li><a href="http://liaocao.com/">潦草影视</a></li>
+<li><a href="http://piankuw.com/">片库网</a></li>
+<li><a href="https://www.nangua55.com/">南瓜电影</a></li>
+<li><a href="http://www.qnvod.net/">全能影视</a></li>
+<li><a href="https://www.mp4er.com/">哔嘀影视</a></li>
+<li><a href="http://1090ys.com/">1090影视</a></li>
+<li><a href="https://www.zhenbuka2.com/">真不卡电影网</a></li>
+<li><a href="https://iq.com">爱奇艺（无广告）</a></li>
+<li><a href="https://wetv.vip/zh-cn">腾讯视频（无广告）</a></li>
+<li><a href="https://www.77kpp.com/">七七看片</a></li>
+<li><a href="https://www.qianoo.cn/">厂长资源</a></li>
+<li><a href="https://www.zxzj.me/">在线之家</a></li>
+<li><a href="https://www.idybee.com/">电影蜜蜂</a></li>
+<li><a href="https://www.chok8.com">Chok吧电影院</a></li>
+<li><a href="https://www.nfmovies.com/">奈非影视</a></li>
+<li><a href="https://www.yunbtv.com/">云播TV</a></li>
+<li><a href="https://www.cmcm5.com">草民电影</a></li>
+<li><a href="https://www.novipnoad.com/">NO视频</a></li>
+<li><a href="https://www.i6v.cc/">6v电影</a></li>
+</ul>
+<h1><a id="%E7%BE%8E%E5%89%A7%E5%9C%A8%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>美剧在线</h1>
+<ul>
+<li><a href="https://agmov.com/">阿哥美剧</a></li>
+<li><a href="https://www.aimeijutt.com/">美剧天堂</a></li>
+<li><a href="http://www.meijuxia.vip/">美剧侠</a></li>
+<li><a href="https://www.waiju.cc/index.html">外剧网</a></li>
+<li><a href="http://meijuxia.net/">美剧虾</a></li>
+<li><a href="https://www.meijuxq.com/">美剧星球</a></li>
+<li><a href="https://www.meijumi.net/">美剧迷</a></li>
+<li><a href="https://www.meiju11.com/new/">爱美剧</a></li>
+<li><a href="https://www.akmeiju.com/">爱看美剧</a></li>
+</ul>
+<h1><a id="%E6%97%A5%E9%9F%A9%E5%9C%A8%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>日韩在线</h1>
+<ul>
+<li><a href="https://www.rijutv.com">日剧TV网</a></li>
+<li><a href="https://www.hmtv.me/">韩迷TV</a></li>
+<li><a href="https://www.tokyonothot.com/">东京不够热</a></li>
+<li><a href="http://www.wwmulu.com/">91日剧</a></li>
+<li><a href="http://www.zzrbl.com/">猪猪日部落</a></li>
+</ul>
+<h1><a id="%E7%BA%AA%E5%BD%95%E7%89%87%E5%9C%A8%E7%BA%BF" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>纪录片在线</h1>
+<ul>
+<li><a href="http://www.jlpcn.net/">纪录片天地</a></li>
+<li><a href="https://space.bilibili.com/22121599/video">Bilibili纪录片集</a></li>
+<li><a href="https://www.lsjlp8.com/">猎手纪录片吧</a></li>
+<li><a href="https://www.jiluhome.cn/">纪录家园</a></li>
+<li><a href="http://www.dadijilu.com/">大地纪录片论坛</a></li>
+<li><a href="http://tv.cctv.com/yxg/index.shtml#datacid=dsj">CCTV – 纪录片库</a></li>
+<li><a href="https://www.bilibili.com/documentary/">B站纪录片</a></li>
+<li><a href="https://www.douban.com/doulist/41546224/">豆瓣9.0+分纪录片</a></li>
+<li><a href="http://www.daofire.com/">盗火纪录片</a></li>
+<li><a href="http://www.bbc.com/earth/world">BBC</a></li>
+<li><a href="http://www.docuchina.cn/">中国纪录片网</a></li>
+<li><a href="http://jilupian.xzwyu.com/">行者物语</a></li>
+</ul>
+<h1><a id="%E5%8A%A8%E6%BC%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>动漫</h1>
+<ul>
+<li><a href="https://www.agefans.net/">AGE动漫</a></li>
+<li><a href="http://www.qimiqimi.co/">奇米奇米</a></li>
+<li><a href="http://www.ikanfan.com/">爱看番</a></li>
+<li><a href="http://www.zzzfun.com/">ZzzFun动漫</a></li>
+<li><a href="http://www.milimili.tv/">咪哩咪哩</a></li>
+<li><a href="http://www.bimiacg.com/">哔咪动漫</a></li>
+<li><a href="http://www.yxdm.org/">怡萱动漫</a></li>
+<li><a href="https://www.36dm.com/">简单动漫</a></li>
+<li><a href="https://www.qiqidongman.com/">奇奇动漫</a></li>
+<li><a href="https://trace.moe/">trace.moe</a></li>
+<li><a href="https://share.acgnx.se/">末日动漫资源库</a></li>
+</ul>
+<h1><a id="%E5%BD%B1%E8%A7%86%E4%B8%8B%E8%BD%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>影视下载</h1>
+<ul>
+<li><a href="http://www.yinfans.me/">音范丝</a></li>
+<li><a href="https://www.uump4.net/">悠悠MP4</a></li>
+<li><a href="https://z2py.com/">最爱片源</a></li>
+<li><a href="https://www.cilixiong.com/">磁力熊</a></li>
+<li><a href="http://www.btbuluo.com/">BT部落天堂</a></li>
+<li><a href="http://www.hhyyk.com/">后花园影库</a></li>
+<li><a href="https://www.btdx8.com/">比特大雄</a></li>
+<li><a href="https://www.piaohua.com/">飘花资源网</a></li>
+<li><a href="http://seedhub.info/">SeedHub</a></li>
+<li><a href="https://www.bd2020.com/">BD影视</a></li>
+<li><a href="http://www.hao6v.com/">6V电影</a></li>
+<li><a href="http://www.mp4ba.cc/">高清MP4</a></li>
+</ul>
+<h1><a id="%E7%A3%81%E5%8A%9B%E6%90%9C%E7%B4%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>磁力搜索</h1>
+<ul>
+<li><a href="http://wx677.xyz/">无限磁力</a></li>
+<li><a href="https://91bt.icu">91BT</a></li>
+<li><a href="https://u3c3.org">U3C3</a></li>
+<li><a href="https://tellme.pw/btsow">BTSOW</a></li>
+<li><a href="https://9cili.com/">磁力海</a></li>
+<li><a href="http://jukan.xyz">BT吃力</a></li>
+<li><a href="https://1337x.gd/">1337X</a></li>
+<li><a href="https://bitcq.com/">bitcq</a></li>
+<li><a href="http://clm.la">磁力猫</a></li>
+<li><a href="https://%E7%A3%81%E6%90%9C.com/">八爪鱼磁力搜索</a></li>
+<li><a href="https://9mag.net/">Magnet</a></li>
+<li><a href="http://seed8.info">种子吧</a></li>
+<li><a href="http://www.bvbus.com">磁力巴士</a></li>
+<li><a href="http://clb.biz/">磁力宝</a></li>
+<li><a href="https://ciliduo.pw">磁力多</a></li>
+<li><a href="https://rez.bthaha.monster/">BT哈哈</a></li>
+<li><a href="http://www.torkitty.com">TorrentKitty</a></li>
+<li><a href="http://www.sobt.me">SOBT</a></li>
+<li><a href="http://www.btdad.cyou">Btdad</a></li>
+<li><a href="http://www.eclzz.me/">磁力蜘蛛</a></li>
+<li><a href="https://cilipa.me">磁力爬</a></li>
+<li><a href="https://0mag.net/">0mag</a></li>
+<li><a href="https://www.tokyotosho.info/">东京图书馆</a></li>
+</ul>
+<h1><a id="%E5%AD%97%E5%B9%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>字幕</h1>
+<ul>
+<li><a href="https://assrt.net/">伪射手网</a></li>
+<li><a href="https://subhd.tv/">SubHD</a></li>
+<li><a href="http://www.icezmz.com/">冰冰字幕组</a></li>
+<li><a href="http://www.zimuxia.cn/">FIX字幕侠</a></li>
+<li><a href="https://www.r3sub.com/">R3字幕</a></li>
+<li><a href="https://subs.kamigami.org/">诸神字幕组</a></li>
+<li><a href="https://subscene.com/">subscene</a></li>
+<li><a href="https://www.a4k.net/">A4k字幕网</a></li>
+</ul>
+<h1><a id="%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>在线音乐</h1>
+<ul>
+<li><a href="https://music.163.com/">网易云音乐</a></li>
+<li><a href="https://y.qq.com/">QQ音乐</a></li>
+<li><a href="https://www.xiami.com/">虾米音乐</a></li>
+<li><a href="http://www.kugou.com/">酷狗音乐</a></li>
+<li><a href="https://www.bandari.net/">班得瑞</a></li>
+<li><a href="https://yinyue.qugeek.com/app/player">墨灵音乐</a></li>
+<li><a href="http://tool.liumingye.cn/music/?page=homePage">MyFreeMp3</a></li>
+<li><a href="https://www.itingwa.com/">听蛙纯音乐网</a></li>
+<li><a href="http://www.app-echo.com/">echo回声</a></li>
+<li><a href="https://www.medici.tv/en/">古典音乐</a></li>
+<li><a href="http://www.kuwo.cn/">酷我音乐</a></li>
+<li><a href="http://music.taihe.com/">千千音乐</a></li>
+<li><a href="https://douban.fm/">豆瓣FM</a></li>
+</ul>
+<h1><a id="%E6%97%A0%E6%8D%9F%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>无损音乐下载</h1>
+<ul>
+<li><a href="http://tool.liumingye.cn/music/?page=homePage">MP3免费下载</a></li>
+<li><a href="http://www.dengshe.com/">灯社</a></li>
+<li><a href="http://www.51ape.com/">51ape</a></li>
+<li><a href="https://www.52flac.com/">52flac</a></li>
+<li><a href="https://www.cdbao.net/">CD包音乐网</a></li>
+<li><a href="https://music.liuzhijin.cn/">音乐直链搜索</a></li>
+</ul>
+<h1><a id="%E8%A7%86%E9%A2%91%E8%A7%A3%E6%9E%90" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>视频解析</h1>
+<ul>
+<li><a href="https://jiexi.bqrdh.com/">不求人导航@VIP解析</a></li>
+<li><a href="https://parse.bqrdh.com/#/bilibili">去水印视频下载</a></li>
+<li><a href="https://weibomiaopai.com/">万能视频下载</a></li>
+<li><a href="https://bilibili.iiilab.com/">哔哩哔哩视频解析下载</a></li>
+<li><a href="https://www.jijidown.com/">唧唧</a></li>
+<li><a href="http://www.dspjx.com/index.php">短视频解析</a></li>
+</ul>
+<h1><a id="%E7%9B%B4%E6%92%AD%EF%BC%88%E5%9B%BD%E5%A4%96%EF%BC%89" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>直播（国外）</h1>
+<ul>
+<li><a href="http://www.winktv.co.kr/">WinkTv</a></li>
+<li><a href="http://www.bigo.tv/">Bigo</a></li>
+<li><a href="http://www.popkontv.com/">PopkonTv</a></li>
+<li><a href="http://livestream.com/">LiveStream</a></li>
+<li><a href="https://www.periscope.com/">Periscope</a></li>
+</ul>
+<h1><a id="%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>下载工具</h1>
+<ul>
+<li><a href="https://parse.bqrdh.com/#/bilibili">去水印视频下载</a></li>
+<li><a href="https://kinhdown.kinh.cc/">kinhdown</a></li>
+<li><a href="https://xdown.org/">Xdown</a></li>
+<li><a href="https://www.freedownloadmanager.org/zh/">FDM</a></li>
+<li><a href="https://www.utorrent.com/intl/zh/">uTorrent</a></li>
+<li><a href="https://www.qbittorrent.org/">qBittorrent</a></li>
+<li><a href="https://github.com/cool2528/baiduCDP/releases">baiduCDP</a></li>
+<li><a href="https://motrix.app/">Motrix</a></li>
+<li><a href="https://yixun.writeas.com/">亿寻</a></li>
+<li><a href="http://pandownload.com/">Pandown</a></li>
+</ul>
+<h1><a id="%E7%94%B5%E8%A7%86%E5%8F%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>电视台</h1>
+<ul>
+<li><a href="http://tv.cctv.com/live/">CCTV官方直播</a></li>
+<li><a href="https://www.nettv.live/">NetTV</a></li>
+<li><a href="http://www.aikantv.org/">爱看TV</a></li>
+<li><a href="https://www.adcmove.com/play/2-1-1.html">ADC电影</a></li>
+<li><a href="http://www.haoqu.net/">好趣网</a></li>
+</ul>
+<h1><a id="%E5%BD%B1%E8%A7%86%E6%9D%83%E5%A8%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>影视权威</h1>
+<ul>
+<li><a href="https://www.imdb.com/">Imdb</a></li>
+<li><a href="https://movie.douban.com/">豆瓣电影</a></li>
+<li><a href="http://www.criticschoice.com/">美国广播影评人协会</a></li>
+<li><a href="https://www.rottentomatoes.com/">烂番茄</a></li>
+<li><a href="https://www.1905.com/">1905电影网</a></li>
+<li><a href="http://www.mtime.com/">时光网</a></li>
+</ul>
+<h1><a id="%E5%85%AC%E5%BC%80%E8%AF%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>公开课</h1>
+<ul>
+<li><a href="https://www.ted.com/">TED</a></li>
+<li><a href="https://crashcourse.club/category/">CrashCourse</a></li>
+<li><a href="https://open.163.com/">网易公开课</a></li>
+<li><a href="https://yixi.tv/">一席</a></li>
+<li><a href="https://ocw.mit.edu/index.htm">MIT公开课</a></li>
+<li><a href="http://www.yiketalks.com">一刻talks</a></li>
+<li><a href="http://www.icourses.cn/cuoc/">爱课程</a></li>
+<li><a href="https://next.xuetangx.com/">学堂在线</a></li>
+<li><a href="https://www.cnmooc.org/home/index.mooc">好大学在线</a></li>
+<li><a href="http://open.nlc.cn/onlineedu/client/index.htm">国图公开课</a></li>
+<li><a href="http://www.1ketang.com/index.html">壹课堂</a></li>
+<li><a href="http://erya.mooc.chaoxing.com/">超星尔雅</a></li>
+<li><a href="https://www.yxgapp.com/">译学馆</a></li>
+</ul>
+<h1><a id="%E7%9F%AD%E8%A7%86%E9%A2%91%E5%B9%B3%E5%8F%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>短视频平台</h1>
+<ul>
+<li><a href="https://www.bilibili.com/">哔哩哔哩</a></li>
+<li><a href="https://www.youtube.com/">Youtube</a></li>
+<li><a href="https://www.kuaishou.com/">快手</a></li>
+<li><a href="https://creator.douyin.com/data/#/billboard/hot">抖音</a></li>
+<li><a href="http://www.365yg.com/">阳光宽频网</a></li>
+<li><a href="http://www.miaopai.com/">秒拍</a></li>
+<li><a href="https://www.huoshanzhibo.com/">火山（抖音）</a></li>
+<li><a href="https://www.baomihua.com/">爆米花视频</a></li>
+<li><a href="https://mp.toutiao.com/">头条号</a></li>
+<li><a href="https://www.xiaohongshu.com/">小红书</a></li>
+<li><a href="https://baijiahao.baidu.com/">百度百家号</a></li>
+<li><a href="https://om.qq.com/userAuth/index">腾讯企鹅号</a></li>
+</ul>
+<h1><a id="%E7%A6%8F%E5%88%A9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>福利</h1>
+<ul>
+<li><a href="https://girls.bqrdh.com/">小姐姐</a></li>
+<li><a href="https://pd.bqrdh.com/?cid=Si6GMyOQ">拼单购</a></li>
+<li><a href="https://www.meituri.com/">美图日</a></li>
+<li><a href="http://www.meitulu.cn/">美图录</a></li>
+<li><a href="https://xslist.org/zh">xslist</a></li>
+</ul>
+</div></body></html>
