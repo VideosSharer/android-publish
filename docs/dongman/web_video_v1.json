@@ -2,6 +2,7 @@
   "videos": {
     "title": "动漫推荐",
     "sort": 2,
+    "girdSize": 2,
     "data": [
       {
         "title": "鬼灭之刃第三季 锻刀村篇",
@@ -40,6 +41,7 @@
   "text": {
     "title": "动漫导航",
     "sort": 1,
+    "girdSize": 4,
     "data": [
       {
         "title": "动漫电影",
