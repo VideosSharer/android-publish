@@ -1,34 +1,62 @@
-[
-  {
-    "title":"鬼灭之刃第三季 锻刀村篇",
-    "icon":"https://cdn.yinghuazy.xyz/jpg/ly1h2esbs3zbpj30hk0s4772.jpg",
-    "url":"https://www.956dm.com/video/7501.html",
-    "sourceName":"樱花动漫",
-    "star": 9.9,
-    "tag":"奇幻*热血*战斗*日本动漫 "
+{
+  "videos": {
+    "title": "动漫推荐",
+    "sort": 2,
+    "data": [
+      {
+        "title": "鬼灭之刃第三季 锻刀村篇",
+        "icon": "https://cdn.yinghuazy.xyz/jpg/ly1h2esbs3zbpj30hk0s4772.jpg",
+        "url": "https://www.956dm.com/video/7501.html",
+        "sourceName": "樱花动漫",
+        "star": 9.9,
+        "tag": "奇幻*热血*战斗*日本动漫 "
+      },
+      {
+        "title": "土下座跪求给看",
+        "icon": "https://cdn.yinghuazy.xyz/upload/vod/20210101-1/a76056a042609dd150026e04d27751b5.jpg",
+        "url": "http://www.qdm18.com/video/1388.html",
+        "sourceName": "趣动漫",
+        "star": 9.7,
+        "tag": "日本动漫*完结*2020"
+      },
+      {
+        "title": "魔女之旅",
+        "icon": "https://cdn.yinghuazy.xyz/upload/vod/20201029-4/2ad71c1a7ea0f20fb84fb214a3667267.jpg",
+        "url": "http://www.qdm18.com/video/2410.html",
+        "sourceName": "趣动漫",
+        "star": 9.9,
+        "tag": "主演：本渡枫,花泽香菜,黑泽朋世"
+      },
+      {
+        "title": "恶玉Drive",
+        "icon": "https://cdn.yinghuazy.xyz/upload/vod/20201029-4/b4d26243433c54550e75874c17f6664f.jpg",
+        "url": "http://www.qdm18.com/video/2379.html",
+        "sourceName": "趣动漫",
+        "star": 2.1,
+        "tag": "主演：黑泽朋世,梅原裕一郎,武内骏辅"
+      }
+    ]
   },
-  {
-    "title":"土下座跪求给看",
-    "icon":"https://cdn.yinghuazy.xyz/upload/vod/20210101-1/a76056a042609dd150026e04d27751b5.jpg",
-    "url":"http://www.qdm18.com/video/1388.html",
-    "sourceName":"趣动漫",
-    "star": 9.7,
-    "tag":"日本动漫*完结*2020"
-  },
-  {
-    "title":"魔女之旅",
-    "icon":"https://cdn.yinghuazy.xyz/upload/vod/20201029-4/2ad71c1a7ea0f20fb84fb214a3667267.jpg",
-    "url":"http://www.qdm18.com/video/2410.html",
-    "sourceName":"趣动漫",
-    "star": 9.9,
-    "tag":"主演：本渡枫,花泽香菜,黑泽朋世"
-  },
-  {
-    "title":"恶玉Drive",
-    "icon":"https://cdn.yinghuazy.xyz/upload/vod/20201029-4/b4d26243433c54550e75874c17f6664f.jpg",
-    "url":"http://www.qdm18.com/video/2379.html",
-    "sourceName":"趣动漫",
-    "star": 2.1,
-    "tag":"主演：黑泽朋世,梅原裕一郎,武内骏辅"
+  "text": {
+    "title": "动漫导航",
+    "sort": 1,
+    "data": [
+      {
+        "title": "动漫电影",
+        "url": "http://www.qdm18.com/type/dongmandianying.html"
+      },
+      {
+        "title": "日本动漫",
+        "url": "http://www.qdm18.com/type/ribendongman.html"
+      },
+      {
+        "title": "国产动漫",
+        "url": "https://www.956dm.com/type/guochandongman.html"
+      },
+      {
+        "title": "欧美动漫",
+        "url": "https://www.956dm.com/type/omeidongman.html"
+      }
+    ]
   }
-]
+}
