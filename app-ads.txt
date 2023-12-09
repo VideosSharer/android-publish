@@ -501,3 +501,5 @@ video.unrulymedia.com, 2464975885, RESELLER
 video.unrulymedia.com, 995298565, RESELLER
 xandr.com, 14082, RESELLER
 Xapads.com, 155860, RESELLER
+adsyield.com, 1233, RESELLER
+onetag.com, 7d9af0b85b5070e, RESELLER
