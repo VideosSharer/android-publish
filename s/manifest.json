@@ -1,6 +1,6 @@
 {
-    "name": "telsavideo",
-    "short_name": "telsavideo",
+    "name": "movie_app",
+    "short_name": "movie_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
