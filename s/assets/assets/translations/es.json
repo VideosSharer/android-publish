@@ -132,5 +132,6 @@
   "coin_buy_message": "Este producto costará {} monedas. ¿Estás seguro de que quieres comprarlo?",
   "upgrade_message": "Surgen algunos problemas y para tener una mejor experiencia es necesario reiniciar la aplicación",
   "invite_friends_code_title": "Mis invitados",
+  "see_all_series": "Ver todas las series",
   "invite_friends_code": "Si alguien te invita, envía su código, tanto tú como tus amigos recibirás {} monedas que se pueden usar para comprar VIP"
 }

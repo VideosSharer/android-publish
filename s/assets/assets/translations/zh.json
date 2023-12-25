@@ -132,5 +132,6 @@
   "coin_buy_nenough": "你剩余的金币不足以购买此商品",
   "coin_buy_message": "本商品会花费你 {} 金币，确认购买吗？",
   "invite_friends_code_title": "我的邀请人",
+  "see_all_series": "看全集",
   "invite_friends_code": "如果你是被某人邀请，填写他的邀请码后，你和你的朋友都将获得{}金币，金币可以用来购买VIP"
 }

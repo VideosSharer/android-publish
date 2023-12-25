@@ -132,6 +132,6 @@
   "coin_buy_message": "This product will cost {} coins. Are you sure to purchase it?",
   "upgrade_message": "Some issues happened, for better experience App need to be restart",
   "invite_friends_code_title": "My inviter",
-  "invite_friends_code": "If you are invited by someone, submit their code and both you and your friends will receive {} coins, which can be used to purchase VIP"
-
+  "invite_friends_code": "If you are invited by someone, submit their code and both you and your friends will receive {} coins, which can be used to purchase VIP",
+  "see_all_series": "See all series"
 }
